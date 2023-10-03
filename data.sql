@@ -24,16 +24,8 @@ INSERT INTO directs (Id_movies, Id_directors) VALUES
 
 -- Roles
 INSERT INTO roles (role) VALUES
-('Dominick Cobb'),
-('Ariadne'),
-('Mr. Eames'),
-('Alan Grant'),
-('Ellie Sattler'),
-('Marty McFly'),
-('Frank Abagnale Jr.'),
-('Billy Costigan'),
-('Dr. King Schultz'),
-('Bruce Wayne/Batman');
+('Main'),
+('Secondary');
 
 -- Actors
 INSERT INTO actors (lastName, firstName, birthDate) VALUES
@@ -41,18 +33,21 @@ INSERT INTO actors (lastName, firstName, birthDate) VALUES
 ('Page', 'Elliot', '1987-02-21'),
 ('Hardy', 'Tom', '1977-09-15'),
 ('Neill', 'Sam', '1947-09-14'),
-('Thompson', 'Lea', '1961-05-31');
+('Thompson', 'Lea', '1961-05-31'),
+('Holland', 'Tom', '1996-06-01'),
+('Coleman', 'Zendaya', '1996-09-01'),
+('Chalamet', 'Timothée', '1995-12-27');
 
 -- Link actors to their roles and movies
 INSERT INTO plays_in (Id_movies, Id_roles, Id_actors) VALUES
 (1, 1, 1),
 (1, 2, 2),
-(1, 3, 3),
-(2, 4, 4),
-(2, 5, 5),
-(3, 6, 5),
-(4, 7, 1),
-(5, 8, 1);
+(1, 2, 3),
+(2, 1, 4),
+(2, 2, 5),
+(3, 1, 5),
+(4, 1, 1),
+(5, 1, 1);
 
 -- Mock data for privileges table
 INSERT INTO privileges (privilege) VALUES
