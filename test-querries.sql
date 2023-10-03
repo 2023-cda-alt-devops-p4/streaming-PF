@@ -20,7 +20,53 @@ ORDER BY
     lastName,
     firstName;
 
--- Gives list of actors for a movie
-SELECT *
-FROM actors
+-- Gives the main actor for a movie
+SELECT
+    a.firstName,
+    a.lastName
+FROM
+    actors AS a
+JOIN
+    plays_in AS pi ON a.Id_actors = pi.Id_actors
+JOIN
+    movies AS m ON pi.Id_movies = m.Id_movies
+JOIN
+    roles AS r ON pi.Id_roles = r.Id_roles
 WHERE
+    m.title = 'Inception'
+AND
+    r.role = 'Main';
+
+-- Gives a list of films for a given actor
+SELECT
+    m.title
+FROM
+    movies AS m
+JOIN
+    plays_in AS pi ON m.Id_movies = pi.Id_movies
+JOIN
+    actors AS a ON pi.Id_actors = a.Id_actors
+WHERE
+    a.lastName = 'DiCaprio';
+
+-- Adds a movie
+INSERT INTO movies (title, length, releaseDate)
+VALUES ('The Godfather', '02:55:00.0000000', '1972-10-18');
+
+-- Adds an actor
+INSERT INTO actors (lastName, firstName, birthDate)
+VALUES ('Brando', 'Marlon', '1924-04-03');
+
+-- Update a movie by name
+UPDATE movies
+SET length = '', releaseDate = ''
+WHERE title = '';
+
+-- Deletes an actor
+DELETE actors
+WHERE lastName = 'Brando';
+
+-- Selects the 3 last added actors
+SELECT TOP 3 *
+FROM actors
+ORDER BY Id_actors DESC;
