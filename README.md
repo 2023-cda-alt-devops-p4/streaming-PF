@@ -13,6 +13,8 @@ CDM :
 CDM :
 ![PDM image](./assets/images/MPD.png)
 
+[Link to data dictionary excel file](streaming_%20data_dictionary.xlsx)
+
 ## Getting Started
 
 This section provides instructions on setting up and running the project. By the end, you'll have a running SQL Server instance with (or without) mock data.
