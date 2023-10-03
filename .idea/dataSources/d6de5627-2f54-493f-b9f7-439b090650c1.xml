@@ -16877,8 +16877,8 @@
 149575571|||0|select|G
 1787153412|||0|select|G
 1803153469|||0|select|G</Grants>
-      <IntrospectionTimestamp>2023-10-03.10:34:01.610</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-03.08:34:01</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-10-03.16:37:24.953</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-03.14:37:24</LocalIntrospectionTimestamp>
       <ObjectId>1</ObjectId>
       <PermissionsCheckSum>7026290343</PermissionsCheckSum>
     </schema>
@@ -16939,7 +16939,7 @@
     </table>
     <table id="5585" parent="5573" name="plays_in">
       <CreatedTimestamp>2023-10-03.10:34:01.037</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-03.10:34:01.037</ModifiedTimestamp>
+      <ModifiedTimestamp>2023-10-03.16:35:50.100</ModifiedTimestamp>
       <ObjectId>791673868</ObjectId>
     </table>
     <table id="5586" parent="5573" name="privileges">
@@ -16949,7 +16949,7 @@
     </table>
     <table id="5587" parent="5573" name="roles">
       <CreatedTimestamp>2023-10-03.10:34:01</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-03.10:34:01.040</ModifiedTimestamp>
+      <ModifiedTimestamp>2023-10-03.16:36:39.550</ModifiedTimestamp>
       <ObjectId>583673127</ObjectId>
     </table>
     <table id="5588" parent="5573" name="spt_fallback_db">
@@ -17017,7 +17017,7 @@
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(9)</SequenceIdentity>
     </column>
     <column id="5601" parent="5579" name="lastName">
       <DasType>varchar(50 char)|0s</DasType>
@@ -17104,7 +17104,7 @@
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(6)</SequenceIdentity>
     </column>
     <column id="5615" parent="5581" name="lastName">
       <DasType>varchar(50 char)|0s</DasType>
@@ -17181,7 +17181,7 @@ Id_directors</ColNames>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(6)</SequenceIdentity>
     </column>
     <column id="5626" parent="5583" name="title">
       <DasType>varchar(50 char)|0s</DasType>
@@ -17284,17 +17284,7 @@ Id_users</ColNames>
       <RefTableId>519672899</RefTableId>
       <RefTableName>movies</RefTableName>
     </foreign-key>
-    <foreign-key id="5641" parent="5585" name="FK__plays_in__Id_rol__320C68B7">
-      <ColNames>Id_roles</ColNames>
-      <CreatedTimestamp>2023-10-03.10:34:01.040</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-03.10:34:01.040</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>839674039</ObjectId>
-      <RefColNames>Id_roles</RefColNames>
-      <RefTableId>583673127</RefTableId>
-      <RefTableName>roles</RefTableName>
-    </foreign-key>
-    <foreign-key id="5642" parent="5585" name="FK__plays_in__Id_act__33008CF0">
+    <foreign-key id="5641" parent="5585" name="FK__plays_in__Id_act__33008CF0">
       <ColNames>Id_actors</ColNames>
       <CreatedTimestamp>2023-10-03.10:34:01.040</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-03.10:34:01.040</ModifiedTimestamp>
@@ -17304,7 +17294,7 @@ Id_users</ColNames>
       <RefTableId>615673241</RefTableId>
       <RefTableName>actors</RefTableName>
     </foreign-key>
-    <index id="5643" parent="5585" name="PK__plays_in__1FF3A0C726846B49">
+    <index id="5642" parent="5585" name="PK__plays_in__1FF3A0C726846B49">
       <Clustering>1</Clustering>
       <ColNames>Id_movies
 Id_roles
@@ -17313,7 +17303,7 @@ Id_actors</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5644" parent="5585" name="PK__plays_in__1FF3A0C726846B49">
+    <key id="5643" parent="5585" name="PK__plays_in__1FF3A0C726846B49">
       <CreatedTimestamp>2023-10-03.10:34:01.040</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-03.10:34:01.040</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17321,31 +17311,31 @@ Id_actors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__plays_in__1FF3A0C726846B49</UnderlyingIndexName>
     </key>
-    <column id="5645" parent="5586" name="Id_privileges">
+    <column id="5644" parent="5586" name="Id_privileges">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(4)</SequenceIdentity>
     </column>
-    <column id="5646" parent="5586" name="privilege">
+    <column id="5645" parent="5586" name="privilege">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="5647" parent="5586" name="PK__privileg__86641A59B2F319B3">
+    <index id="5646" parent="5586" name="PK__privileg__86641A59B2F319B3">
       <Clustering>1</Clustering>
       <ColNames>Id_privileges</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <index id="5648" parent="5586" name="UQ__privileg__BBB7063DA875CDD0">
+    <index id="5647" parent="5586" name="UQ__privileg__BBB7063DA875CDD0">
       <ColNames>privilege</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>2</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5649" parent="5586" name="PK__privileg__86641A59B2F319B3">
+    <key id="5648" parent="5586" name="PK__privileg__86641A59B2F319B3">
       <CreatedTimestamp>2023-10-03.10:34:01.013</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-03.10:34:01.013</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17353,23 +17343,31 @@ Id_actors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__privileg__86641A59B2F319B3</UnderlyingIndexName>
     </key>
-    <key id="5650" parent="5586" name="UQ__privileg__BBB7063DA875CDD0">
+    <key id="5649" parent="5586" name="UQ__privileg__BBB7063DA875CDD0">
       <CreatedTimestamp>2023-10-03.10:34:01.013</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-03.10:34:01.013</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>679673469</ObjectId>
       <UnderlyingIndexName>UQ__privileg__BBB7063DA875CDD0</UnderlyingIndexName>
     </key>
+    <check id="5650" parent="5587" name="CK__roles__role__3B95D2F1">
+      <ColNames>role</ColNames>
+      <CreatedTimestamp>2023-10-03.16:36:39.550</CreatedTimestamp>
+      <ModifiedTimestamp>2023-10-03.16:36:39.550</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>999674609</ObjectId>
+      <Predicate>[role]=&apos;secondary&apos; OR [role]=&apos;main&apos;</Predicate>
+    </check>
     <column id="5651" parent="5587" name="Id_roles">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(3)</SequenceIdentity>
     </column>
     <column id="5652" parent="5587" name="role">
-      <DasType>varchar(50 char)|0s</DasType>
+      <DasType>varchar(10 char)|0s</DasType>
       <NotNull>1</NotNull>
-      <Position>2</Position>
+      <Position>3</Position>
     </column>
     <index id="5653" parent="5587" name="PK__roles__79B8DE7C7BC67CB5">
       <Clustering>1</Clustering>
@@ -17576,7 +17574,7 @@ Id_actors</ColNames>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(6)</SequenceIdentity>
     </column>
     <column id="5694" parent="5592" name="firstName">
       <DasType>varchar(50 char)|0s</DasType>
