@@ -39,22 +39,23 @@ CREATE TABLE privileges(
 CREATE TABLE users(
    Id_users INT IDENTITY(1,1),
    firstName VARCHAR(50) NOT NULL,
+   lastName VARCHAR(50) NOT NULL,
    email VARCHAR(50) NOT NULL,
    password VARCHAR(50) NOT NULL,
-   lastName VARCHAR(50) NOT NULL,
    Id_privileges INT NOT NULL,
    PRIMARY KEY(Id_users),
    FOREIGN KEY(Id_privileges) REFERENCES privileges(Id_privileges)
 );
 
 CREATE TABLE archives(
-   Id_archives INT IDENTITY(1,1),
-   updateDate DATE NOT NULL,
-   oldValue VARCHAR(50) NOT NULL,
-   newValue VARCHAR(50) NOT NULL,
-   Id_users INT NOT NULL,
-   PRIMARY KEY(Id_archives),
-   FOREIGN KEY(Id_users) REFERENCES users(Id_users)
+    Id_archives INT IDENTITY(1,1),
+    updateDate DATETIME2 NOT NULL,
+    columnName VARCHAR(50) NOT NULL,
+    oldValue VARCHAR(50) NOT NULL,
+    newValue VARCHAR(50) NOT NULL,
+    Id_users INT NOT NULL,
+    PRIMARY KEY(Id_archives),
+    FOREIGN KEY(Id_users) REFERENCES users(Id_users)
 );
 
 CREATE TABLE plays_in(

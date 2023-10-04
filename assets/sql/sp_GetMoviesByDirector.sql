@@ -9,5 +9,3 @@ BEGIN
     JOIN directors dir ON d.Id_directors = dir.Id_directors
     WHERE dir.firstName = @DirectorFirstName AND dir.lastName = @DirectorLastName;
 END;
-
-EXEC sp_GetMoviesByDirector @DirectorFirstName='Christopher', @DirectorLastName='Nolan';
