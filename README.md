@@ -4,16 +4,16 @@ Database ran in docker container referencing users, movies, directors and actors
 
 ## Description
 
-This project contains three pdf file corresponding to the CDM, LDM and PDM of the database in the ./assets/pdf/ file :
+This project contains three pdf file corresponding to the CDM, LDM and PDM of the database in the ./assets/pdf/ folder and a streaming_data_dictionary.xlsx in the assets folder :
 
+Data Dictionary :
+![dictionary image](./assets/images/dictionary.png)
 CDM :
 ![CDM image](./assets/images/MCD.png)
 CDM :
 ![LDM image](./assets/images/MLD.png)
 CDM :
 ![PDM image](./assets/images/MPD.png)
-
-[Link to data dictionary excel file](streaming_%20data_dictionary.xlsx)
 
 ## Getting Started
 
