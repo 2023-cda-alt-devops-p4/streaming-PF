@@ -1,3 +1,7 @@
+-- ===============================
+-- = Queries for testing purpose =
+-- ===============================
+
 --Selects titles and release dates from the most recent to older movie
 SELECT title, releaseDate
 FROM movies

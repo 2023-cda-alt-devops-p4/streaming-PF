@@ -1,3 +1,7 @@
+-- =================================================================
+-- = Stored procedure to get a list of movies for a given director =
+-- =================================================================
+
 CREATE PROCEDURE sp_GetMoviesByDirector
 @DirectorFirstName NVARCHAR(50),
 @DirectorLastName NVARCHAR(50)

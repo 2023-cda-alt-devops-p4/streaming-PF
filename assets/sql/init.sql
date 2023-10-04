@@ -1,4 +1,6 @@
--- tables creation
+-- =================
+-- = Create Tables =
+-- =================
 
 CREATE TABLE movies(
    Id_movies INT IDENTITY(1,1),
@@ -84,3 +86,11 @@ CREATE TABLE owns(
    FOREIGN KEY(Id_users) REFERENCES users(Id_users)
 );
 
+
+-- ================
+-- = Create Roles =
+-- ================
+
+-- Admin
+CREATE ROLE AdminRole;
+EXEC sp_addrolemember 'AdminRole', 'Admin';
