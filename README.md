@@ -10,7 +10,7 @@ Data Dictionary :
 ![dictionary image](./assets/images/dictionary.png)
 CDM :
 ![CDM image](./assets/images/MCD.png)
-CDM :
+LDM :
 ![LDM image](./assets/images/MLD.png)
 CDM :
 ![PDM image](./assets/images/MPD.png)
@@ -20,7 +20,8 @@ CDM :
 This section provides instructions on setting up and running the project. By the end, you'll have a running SQL Server instance with (or without) mock data.
 
 ### Prerequisites
-* Docker installed on your machine.
+* Docker and Docker Compose installed on your machine.
+* A SQL Server Client (SSMS, SSDT, Azure Data Studio, DataGrip...)
 * Basic knowledge of SQL Server and Docker (optional but recommended).
 
 ### Setup and Running
@@ -31,24 +32,41 @@ git clone https://github.com/2023-cda-alt-devops-p4/streaming-PF.git
 cd streaming-PF
 ```
 
-Create a safe password :
+Pull the image and start the MSSQL container :
 ```bash
-export MSSQL_SA_PASSWORD=YourStrongPasswordHere
+docker compose up
 ```
 
-Build the Docker Image :
+Creating the Database tables :
 ```bash
-docker build -t mssql-server-image --build-arg SA_PASSWORD_ARG=$MSSQL_SA_PASSWORD .
+docker run -it --rm --network=host \
+  mcr.microsoft.com/mssql-tools \
+  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/init.sql
 ```
 
-Run the SQL Server Container ('mssql-server-container' is just a suggestion, change it at ease) :
+Running the trigger to populate the archives :
 ```bash
-docker run --name mssql-server-container -e 'ACCEPT_EULA=Y' -p 1433:1433 -d mssql-server-image
+docker run -it --rm --network=host \
+  mcr.microsoft.com/mssql-tools \
+  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/users_table_update_archives_trigger.sql
 ```
 
 Populating the Database with Mock Data (Optional):
 ```bash
-cat data.sql | docker exec -i mssql-server-container /opt/mssql-tools/bin/sqlcmd -U SA -P $MSSQL_SA_PASSWORD
+docker run -it --rm --network=host \
+  mcr.microsoft.com/mssql-tools \
+  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/data.sql
+```
+
+Storing the stored procedure sp_GetMoviesByDirector :
+```bash
+docker run -it --rm --network=host \
+  mcr.microsoft.com/mssql-tools \
+  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/sp_GetMoviesByDirector.sql
+```
+The command to execute it : 
+```bash
+EXEC sp_GetMoviesByDirector @DirectorFirstName='Christopher', @DirectorLastName='Nolan';
 ```
 
 ### Accessing the Database
@@ -57,35 +75,28 @@ You can access the SQL Server instance using your preferred SQL client. Use the 
 Host: localhost<br>
 Port: 1433<br>
 Username: SA<br>
-Password: YourStrongPasswordHere
+Password: Password
 
 ### Stopping and Removing the Container
 
-When done, you can stop the SQL Server container with :
+When done, you can stop and remove the SQL Server container with :
 ```bash
-docker stop mssql-server-container
-```
-
-To remove the container :
-```bash
-docker rm mssql-server-container
+docker compose down
 ```
 
 ## Querries set for testing purpose
 
 Querries stocked in my test-querries.sql file :
 
-* Selects titles and release dates :
+* Selects titles and release dates from the most recent to older movie :
 ```sql
-from the most recent to older movie
 SELECT title, releaseDate
 FROM movies
 ORDER BY releaseDate DESC;
 ```
 
-* Last and first names, of actors :
+* Last and first names, of actors that are older than 30, in alphabetical order :
 ```sql
-that are older than 30, in alphabetical order
 SELECT
     firstname,
     lastname,
@@ -200,4 +211,4 @@ Contributors names
 
 ## License
 
-This project is licensed under the [MIT] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the [LICENSE] (LICENSE) file for details
