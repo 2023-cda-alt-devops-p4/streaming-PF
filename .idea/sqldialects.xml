@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/assets/sql/data.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/get-movies-by-director-procedure.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/init.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/trigger.sql" dialect="TSQL" />
+  </component>
+</project>
