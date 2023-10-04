@@ -63,6 +63,10 @@ INSERT INTO users (firstName, email, password, lastName, Id_privileges) VALUES
 ('Bob', 'bob@email.com', 'bobPass321', 'Brown', 2),
 ('Charlie', 'charlie@email.com', 'charliePass654', 'Green', 3);
 
+UPDATE users
+SET firstName = 'Johny'
+WHERE Id_users = 1;
+
 
 -- Mock data for owns table (linking movies and users)
 -- This is a simple random selection of movies for each user.
@@ -82,3 +86,4 @@ INSERT INTO owns (Id_movies, Id_users) VALUES
 (1, 5),
 (2, 5),
 (3, 5);
+
