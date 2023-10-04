@@ -1,9 +1,13 @@
+#################################################################
+## Docker compose file for pulling and configuring MSSQL image ##
+#################################################################
+
 version: '3.8'
 
 services:
 
   mssql-db:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+    image: mcr.microsoft.com/mssql/server:${VERSION}
     environment:
       ACCEPT_EULA: ${EULA}
       SA_PASSWORD: ${PASSWORD}
