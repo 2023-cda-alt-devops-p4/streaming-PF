@@ -36,34 +36,19 @@ Pull the image and start the MSSQL container :
 ```bash
 docker compose up
 ```
+Purpose of sql files in assets/sql :
+* Creating the Database tables : init.sql
 
-Creating the Database tables :
-```bash
-docker run -it --rm --network=host \
-  mcr.microsoft.com/mssql-tools \
-  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/init.sql
-```
+* Populating the Database with Mock Data (Optional): data.sql
 
-Running the trigger to populate the archives :
-```bash
-docker run -it --rm --network=host \
-  mcr.microsoft.com/mssql-tools \
-  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/users_table_update_archives_trigger.sql
-```
+* Creating admin and user role : privileges.sql (admin login : admin, password : Adm1n*** / user login : user, password : Us3r***!)
 
-Populating the Database with Mock Data (Optional):
-```bash
-docker run -it --rm --network=host \
-  mcr.microsoft.com/mssql-tools \
-  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/data.sql
-```
+* Running the trigger to populate the users archives : users_table_update_archive_trigger.sql
 
-Storing the stored procedure sp_GetMoviesByDirector :
-```bash
-docker run -it --rm --network=host \
-  mcr.microsoft.com/mssql-tools \
-  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/sp_GetMoviesByDirector.sql
-```
+* Creating the stored procedure to get movies list by director : sp_GetMoviesByDirector.sql
+
+* Test querries file : test-querries.sql
+
 The command to execute it : 
 ```bash
 EXEC sp_GetMoviesByDirector @DirectorFirstName='Christopher', @DirectorLastName='Nolan';
@@ -88,7 +73,7 @@ docker compose down
 
 Querries stocked in my test-querries.sql file :
 
-* Selects titles and release dates from the most recent to older movie :
+* Select titles and release dates from the most recent to older movie :
 ```sql
 SELECT title, releaseDate
 FROM movies
@@ -114,7 +99,7 @@ ORDER BY
     firstName;
 ```
 
-* Displays the main actor for a given movie :
+* Display the main actor for a given movie :
 ```sql
 SELECT
     a.firstName,
@@ -133,7 +118,7 @@ AND
     r.role = 'Main';
 ```
 
-* Gives a list of films for a given actor :
+* Give a list of films for a given actor :
 ```sql
 SELECT
     m.title
@@ -147,32 +132,32 @@ WHERE
     a.lastName = 'DiCaprio';
 ```
 
-* Adds a movie :
+* Add a movie :
 ```sql
 INSERT INTO movies (title, length, releaseDate)
 VALUES ('The Godfather', '02:55:00.0000000', '1972-10-18');
 ```
 
-* Adds an actor :
+* Add an actor :
 ```sql
 INSERT INTO actors (lastName, firstName, birthDate)
 VALUES ('Brando', 'Marlon', '1924-04-03');
 ```
 
-* Updates a movie by name :
+* Update a movie by name :
 ```sql
 UPDATE movies
 SET length = '', releaseDate = ''
 WHERE title = '';
 ```
 
-* Deletes an actor :
+* Delete an actor :
 ```sql
 DELETE actors
 WHERE lastName = 'Brando';
 ```
 
-* Selects the 3 last added actors :
+* Select the 3 last added actors :
 ```sql
 SELECT TOP 3 *
 FROM actors

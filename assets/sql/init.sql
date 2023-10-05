@@ -1,4 +1,6 @@
--- tables creation
+-- =================
+-- = Create Tables =
+-- =================
 
 CREATE TABLE movies(
    Id_movies INT IDENTITY(1,1),
@@ -83,4 +85,3 @@ CREATE TABLE owns(
    FOREIGN KEY(Id_movies) REFERENCES movies(Id_movies),
    FOREIGN KEY(Id_users) REFERENCES users(Id_users)
 );
-

@@ -1,3 +1,7 @@
+-- ================
+-- = Mock-Up Data =
+-- ================
+
 -- Inserting movies
 INSERT INTO movies (title, length, releaseDate) VALUES
 ('Inception', '02:28:00', '2010-07-16'),

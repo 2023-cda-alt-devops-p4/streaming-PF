@@ -3,5 +3,9 @@
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/assets/sql/data.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/assets/sql/init.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/privileges.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/sp_GetMoviesByDirector.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/test-querries.sql" dialect="TSQL" />
+    <file url="file://$PROJECT_DIR$/assets/sql/users_table_update_archives_trigger.sql" dialect="TSQL" />
   </component>
 </project>
