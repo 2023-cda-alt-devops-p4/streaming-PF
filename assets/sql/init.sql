@@ -85,12 +85,3 @@ CREATE TABLE owns(
    FOREIGN KEY(Id_movies) REFERENCES movies(Id_movies),
    FOREIGN KEY(Id_users) REFERENCES users(Id_users)
 );
-
-
--- ================
--- = Create Roles =
--- ================
-
--- Admin
-CREATE ROLE AdminRole;
-EXEC sp_addrolemember 'AdminRole', 'Admin';

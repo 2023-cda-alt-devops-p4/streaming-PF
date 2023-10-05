@@ -39,9 +39,7 @@ docker compose up
 
 Creating the Database tables :
 ```bash
-docker run -it --rm --network=host \
-  mcr.microsoft.com/mssql-tools \
-  /opt/mssql-tools/bin/sqlcmd -S localhost,${PORT} -U SA -P ${PASSWORD} -i ./assets/sql/init.sql
+docker run -it --rm --network=host mcr.microsoft.com/mssql-tools /opt/mssql-tools/bin/sqlcmd -S localhost,%PORT% -U SA -P %PASSWORD% -i ./assets/sql/init.sql
 ```
 
 Running the trigger to populate the archives :
