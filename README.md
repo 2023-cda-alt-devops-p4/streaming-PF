@@ -32,11 +32,16 @@ git clone https://github.com/2023-cda-alt-devops-p4/streaming-PF.git
 cd streaming-PF
 ```
 
-Pull the image and start the MSSQL container :
+Pull the image, start the MSSQL container and create full database :
 ```bash
 docker compose up
 ```
+Purpose of Dockerfile : starts the automation script
+
+Purpose of init-sql-server.sh : runs the sql scripts automaticaly
+
 Purpose of sql files in assets/sql :
+
 * Creating the Database tables : init.sql
 
 * Populating the Database with Mock Data (Optional): data.sql
@@ -45,22 +50,22 @@ Purpose of sql files in assets/sql :
 
 * Running the trigger to populate the users archives : users_table_update_archive_trigger.sql
 
-* Creating the stored procedure to get movies list by director : sp_GetMoviesByDirector.sql
-
-* Test querries file : test-querries.sql
-
-The command to execute it : 
+* Creating the stored procedure to get movies list by director : sp_GetMoviesByDirector.sql. The command to execute it :
 ```bash
 EXEC sp_GetMoviesByDirector @DirectorFirstName='Christopher', @DirectorLastName='Nolan';
 ```
+
+* Test querries file : test-querries.sql
+
+
 
 ### Accessing the Database
 You can access the SQL Server instance using your preferred SQL client. Use the following connection details:
 
 Host: localhost<br>
 Port: 1433<br>
-Username: SA<br>
-Password: Password
+Username: yourUsername
+Password: yourPassword
 
 ### Stopping and Removing the Container
 
