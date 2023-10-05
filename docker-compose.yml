@@ -7,7 +7,9 @@ version: '3.8'
 services:
 
   mssql-db:
-    image: mcr.microsoft.com/mssql/server:${VERSION}
+    build:
+      context: .
+      dockerfile: Dockerfile # or path to your Dockerfile if it's not in the root
     environment:
       ACCEPT_EULA: ${EULA}
       SA_PASSWORD: ${PASSWORD}
@@ -15,6 +17,8 @@ services:
       - "${PORT}:1433"
     volumes:
       - mssql_data:/var/opt/mssql
+      - ./assets/sql:/sqlscripts
+
 
 volumes:
   mssql_data:
