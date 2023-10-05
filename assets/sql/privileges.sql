@@ -12,7 +12,7 @@ GRANT CONTROL ON DATABASE::master TO AdminRole;
 
 
 -- User
-CREATE LOGIN [user] WITH PASSWORD = 'Pi3rre***'
+CREATE LOGIN [user] WITH PASSWORD = 'Us3r***!'
 USE master
 CREATE USER [User] FOR LOGIN [user];
 CREATE ROLE UserRole;
@@ -23,7 +23,7 @@ GRANT SELECT TO UserRole;
 
 
 -- EXEC sp_helprolemember 'AdminRole';
--- EXEC sp_droprolemember 'AdminRole', 'Admin';
--- DROP ROLE AdminRole;
--- DROP LOGIN [admin];
--- DROP USER [Admin];
+-- EXEC sp_droprolemember 'UserRole', 'User';
+-- DROP ROLE UserRole;
+-- DROP LOGIN [user];
+-- DROP USER [User];
