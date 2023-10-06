@@ -38,17 +38,17 @@ docker compose up
 ```
 Purpose of Dockerfile : starts the automation script
 
-Purpose of init-sql-server.sh : runs the sql scripts automaticaly
+Purpose of init-sql-server.sh : runs the sql scripts automaticaly (triggers still have to be run manually though)
 
 Purpose of sql files in assets/sql :
 
 * Creating the Database tables : init.sql
 
+* Running the triggers to populate the archives : users_table_update_archive_trigger.sql
+
 * Populating the Database with Mock Data (Optional): data.sql
 
 * Creating admin and user role : privileges.sql (admin login : admin, password : Adm1n*** / user login : user, password : Us3r***!)
-
-* Running the trigger to populate the users archives : users_table_update_archive_trigger.sql
 
 * Creating the stored procedure to get movies list by director : sp_GetMoviesByDirector.sql. The command to execute it :
 ```bash
