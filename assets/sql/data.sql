@@ -90,4 +90,3 @@ INSERT INTO owns (Id_movies, Id_users) VALUES
 (1, 5),
 (2, 5),
 (3, 5);
-

@@ -63,8 +63,8 @@ VALUES ('Brando', 'Marlon', '1924-04-03');
 
 -- Update a movie by name
 UPDATE movies
-SET length = '', releaseDate = ''
-WHERE title = '';
+SET length = '02:29:00.0000000', releaseDate = '2010-07-16'
+WHERE title = 'Inception';
 
 -- Deletes an actor
 DELETE actors
