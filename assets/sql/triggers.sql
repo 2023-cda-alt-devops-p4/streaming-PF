@@ -14,7 +14,7 @@ AS
 BEGIN
 -- User's first name
 -- what to do ?
-    INSERT INTO archives (userUpdateDate, columnName, oldValue, newValue, Id_users)
+    INSERT INTO usersArchives (userUpdateDate, columnName, oldValue, newValue, Id_users)
 -- what data ?
     SELECT
         -- returns the current date and time
@@ -37,7 +37,7 @@ BEGIN
         i.firstName <> d.firstName
 
 -- User's last name
-    INSERT INTO archives (userUpdateDate, columnName, oldValue, newValue, Id_users)
+    INSERT INTO usersArchives (userUpdateDate, columnName, oldValue, newValue, Id_users)
     SELECT
         GETDATE(),
         'lastName',
@@ -52,7 +52,7 @@ BEGIN
         i.lastName <> d.lastName
 
 -- User's email
-    INSERT INTO archives (userUpdateDate, columnName, oldValue, newValue, Id_users)
+    INSERT INTO usersArchives (userUpdateDate, columnName, oldValue, newValue, Id_users)
     SELECT
         GETDATE(),
         'email',
@@ -67,7 +67,7 @@ BEGIN
         i.email <> d.email
 
 -- User's privilege
-   INSERT INTO archives (userUpdateDate, columnName, oldValue, newValue, Id_users)
+   INSERT INTO usersArchives (userUpdateDate, columnName, oldValue, newValue, Id_users)
     SELECT
         GETDATE(),
         'Id_privileges',
@@ -135,15 +135,15 @@ BEGIN
 END;
 
 CREATE TRIGGER trg_archives_update_timestamp
-ON archives
+ON usersArchives
 AFTER UPDATE
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    UPDATE archives
+    UPDATE usersArchives
     SET updateDate = GETDATE()
-    WHERE Id_archives IN (SELECT Id_archives FROM INSERTED);
+    WHERE Id_usersArchives IN (SELECT Id_usersArchives FROM INSERTED);
 END;
 
 CREATE TRIGGER trg_privileges_update_timestamp

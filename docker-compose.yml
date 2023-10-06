@@ -9,7 +9,7 @@ services:
   mssql-db:
     build:
       context: .
-      dockerfile: Dockerfile # or path to your Dockerfile if it's not in the root
+      dockerfile: Dockerfile
     environment:
       ACCEPT_EULA: ${EULA}
       SA_PASSWORD: ${PASSWORD}
