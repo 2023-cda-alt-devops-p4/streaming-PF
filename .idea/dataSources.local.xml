@@ -8,7 +8,7 @@
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <user-name>sa</user-name>
+      <user-name>user</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="database" qname="@">

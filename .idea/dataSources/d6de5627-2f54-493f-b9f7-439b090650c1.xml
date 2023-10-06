@@ -6,31 +6,10 @@
 3|||2|connect|G
 4|||2|connect|G
 5|||2|connect|G
-0|root||260|alter any event session|G
-0|root||102|authenticate server|G
-0|root||103|authenticate server|G
-0|root||260|connect any database|G
 0|root||1|connect sql|G
-0|root||256|connect sql|G
-0|root||257|connect sql|G
-0|root||258|connect sql|G
-0|root||259|connect sql|G
-0|root||260|connect sql|G
-0|root||261|connect sql|G
-0|root||262|connect sql|G
 0|root||263|connect sql|G
-0|root||105|control server|G
-0|root||2|view any database|G
-0|root||101|view any definition|G
-0|root||102|view any definition|G
-0|root||105|view any definition|G
-0|root||106|view any definition|G
-0|root||257|view any definition|G
-0|root||260|view any definition|G
-0|root||102|view server state|G
-0|root||257|view server state|G
-0|root||260|view server state|G</Grants>
-      <PermissionsCheckSum>38476239460</PermissionsCheckSum>
+0|root||2|view any database|G</Grants>
+      <PermissionsCheckSum>9477400651</PermissionsCheckSum>
       <ServerVersion>16.0.4075</ServerVersion>
     </root>
     <collation id="2" parent="1" name="Albanian_100_BIN">
@@ -16561,19 +16540,12 @@
       <Current>1</Current>
       <Fingerprint>1.37717/00000000-0000-0000-0000-000000000000@0f92b6acee80</Fingerprint>
       <Grants>1|database||10|alter|D
-1|database||1|connect|G
-1|database||2|connect|G
-1|database||5|connect|G
-1|database||6|connect|G
-1|database||7|connect|G
 1|database||9|connect|G
-1|database||8|control|G
 1|database||10|create function|D
 1|database||10|create procedure|D
 1|database||10|create table|D
 1|database||10|create view|D
 1|database||10|delete|D
-1|database||6|execute|G
 1|database||10|execute|D
 1|database||10|insert|D
 1|database||10|select|G
@@ -16581,7 +16553,7 @@
 1|database||0|view any column encryption key definition|G
 1|database||0|view any column master key definition|G</Grants>
       <ObjectId>1</ObjectId>
-      <PermissionsCheckSum>25372923474</PermissionsCheckSum>
+      <PermissionsCheckSum>16319635646</PermissionsCheckSum>
       <CollationName>SQL_Latin1_General_CP1_CI_AS</CollationName>
     </database>
     <database id="5511" parent="1" name="model">
@@ -16954,8 +16926,8 @@
 149575571|||0|select|G
 1787153412|||0|select|G
 1803153469|||0|select|G</Grants>
-      <IntrospectionTimestamp>2023-10-06.08:57:20.150</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-10-06.06:57:20</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-10-06.11:41:14.877</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-10-06.09:41:14</LocalIntrospectionTimestamp>
       <ObjectId>1</ObjectId>
       <PermissionsCheckSum>7026290343</PermissionsCheckSum>
     </schema>
@@ -16965,192 +16937,162 @@
     <schema id="5587" parent="5510" name="sys">
       <ObjectId>4</ObjectId>
     </schema>
-    <routine id="5588" parent="5585" name="sp_GetMoviesByDirector">
-      <CreatedTimestamp>2023-10-06.08:49:04.877</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-06.08:49:04.877</ModifiedTimestamp>
-      <ObjectId>1095674951</ObjectId>
-      <RoutineType>proc</RoutineType>
-      <SourceTextLength>553</SourceTextLength>
-    </routine>
-    <routine id="5589" parent="5585" name="sp_MScleanupmergepublisher">
-      <CreatedTimestamp>2023-08-23.16:46:16.067</CreatedTimestamp>
-      <ModifiedTimestamp>2023-08-23.16:46:30.540</ModifiedTimestamp>
-      <ObjectId>2139154666</ObjectId>
-      <RoutineType>proc</RoutineType>
-      <SourceTextLength>100</SourceTextLength>
-    </routine>
-    <routine id="5590" parent="5585" name="sp_MSrepl_startup">
-      <CreatedTimestamp>2023-08-23.16:46:16.057</CreatedTimestamp>
-      <ModifiedTimestamp>2023-08-23.16:46:30.533</ModifiedTimestamp>
-      <ObjectId>2123154609</ObjectId>
-      <RoutineType>proc</RoutineType>
-      <SourceTextLength>83</SourceTextLength>
-    </routine>
-    <table id="5591" parent="5585" name="MSreplication_options">
+    <table id="5588" parent="5585" name="MSreplication_options">
       <CreatedTimestamp>2023-08-23.16:46:16.030</CreatedTimestamp>
       <ModifiedTimestamp>2023-08-23.16:46:30.527</ModifiedTimestamp>
       <ObjectId>2107154552</ObjectId>
     </table>
-    <table id="5592" parent="5585" name="actors">
+    <table id="5589" parent="5585" name="actors">
       <CreatedTimestamp>2023-10-06.08:49:04.493</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:54:17.100</ModifiedTimestamp>
       <ObjectId>615673241</ObjectId>
     </table>
-    <table id="5593" parent="5585" name="archives">
-      <CreatedTimestamp>2023-10-06.08:49:04.510</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-06.08:49:04.550</ModifiedTimestamp>
-      <ObjectId>743673697</ObjectId>
-    </table>
-    <table id="5594" parent="5585" name="directors">
+    <table id="5590" parent="5585" name="directors">
       <CreatedTimestamp>2023-10-06.08:49:04.477</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.543</ModifiedTimestamp>
       <ObjectId>551673013</ObjectId>
     </table>
-    <table id="5595" parent="5585" name="directs">
+    <table id="5591" parent="5585" name="directs">
       <CreatedTimestamp>2023-10-06.08:49:04.523</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.523</ModifiedTimestamp>
       <ObjectId>871674153</ObjectId>
     </table>
-    <table id="5596" parent="5585" name="movies">
+    <table id="5592" parent="5585" name="movies">
       <CreatedTimestamp>2023-10-06.08:49:04.470</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:57:19.870</ModifiedTimestamp>
       <ObjectId>519672899</ObjectId>
     </table>
-    <table id="5597" parent="5585" name="owns">
+    <table id="5593" parent="5585" name="owns">
       <CreatedTimestamp>2023-10-06.08:49:04.530</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.530</ModifiedTimestamp>
       <ObjectId>935674381</ObjectId>
     </table>
-    <table id="5598" parent="5585" name="plays_in">
+    <table id="5594" parent="5585" name="plays_in">
       <CreatedTimestamp>2023-10-06.08:49:04.517</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.517</ModifiedTimestamp>
       <ObjectId>791673868</ObjectId>
     </table>
-    <table id="5599" parent="5585" name="privileges">
+    <table id="5595" parent="5585" name="privileges">
       <CreatedTimestamp>2023-10-06.08:49:04.500</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.563</ModifiedTimestamp>
       <ObjectId>647673355</ObjectId>
     </table>
-    <table id="5600" parent="5585" name="roles">
+    <table id="5596" parent="5585" name="roles">
       <CreatedTimestamp>2023-10-06.08:49:04.487</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.570</ModifiedTimestamp>
       <ObjectId>583673127</ObjectId>
     </table>
-    <table id="5601" parent="5585" name="spt_fallback_db">
+    <table id="5597" parent="5585" name="spt_fallback_db">
       <CreatedTimestamp>2003-04-08.11:18:01.557</CreatedTimestamp>
       <ModifiedTimestamp>2023-08-23.16:46:30.497</ModifiedTimestamp>
       <ObjectId>117575457</ObjectId>
     </table>
-    <table id="5602" parent="5585" name="spt_fallback_dev">
+    <table id="5598" parent="5585" name="spt_fallback_dev">
       <CreatedTimestamp>2003-04-08.11:18:02.870</CreatedTimestamp>
       <ModifiedTimestamp>2023-08-23.16:46:30.503</ModifiedTimestamp>
       <ObjectId>133575514</ObjectId>
     </table>
-    <table id="5603" parent="5585" name="spt_fallback_usg">
+    <table id="5599" parent="5585" name="spt_fallback_usg">
       <CreatedTimestamp>2003-04-08.11:18:04.180</CreatedTimestamp>
       <ModifiedTimestamp>2023-08-23.16:46:30.510</ModifiedTimestamp>
       <ObjectId>149575571</ObjectId>
     </table>
-    <table id="5604" parent="5585" name="spt_monitor">
+    <table id="5600" parent="5585" name="spt_monitor">
       <CreatedTimestamp>2023-08-23.16:45:15.590</CreatedTimestamp>
       <ModifiedTimestamp>2023-08-23.16:46:30.520</ModifiedTimestamp>
       <ObjectId>1803153469</ObjectId>
     </table>
-    <table id="5605" parent="5585" name="users">
+    <table id="5601" parent="5585" name="users">
       <CreatedTimestamp>2023-10-06.08:49:04.503</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-06.08:49:04.533</ModifiedTimestamp>
+      <ModifiedTimestamp>2023-10-06.11:34:18.830</ModifiedTimestamp>
       <ObjectId>695673526</ObjectId>
     </table>
-    <view id="5606" parent="5585" name="spt_values">
+    <table id="5602" parent="5585" name="usersArchives">
+      <CreatedTimestamp>2023-10-06.08:49:04.510</CreatedTimestamp>
+      <ModifiedTimestamp>2023-10-06.11:07:57.143</ModifiedTimestamp>
+      <ObjectId>743673697</ObjectId>
+    </table>
+    <view id="5603" parent="5585" name="spt_values">
       <CreatedTimestamp>2023-08-23.16:45:15.570</CreatedTimestamp>
       <ModifiedTimestamp>2023-08-23.16:45:15.593</ModifiedTimestamp>
       <ObjectId>1787153412</ObjectId>
       <SourceTextLength>161</SourceTextLength>
     </view>
-    <argument id="5607" parent="5588" name="@DirectorFirstName">
-      <DasType>nvarchar(50 char)|0s</DasType>
-      <Position>1</Position>
-    </argument>
-    <argument id="5608" parent="5588" name="@DirectorLastName">
-      <DasType>nvarchar(50 char)|0s</DasType>
-      <Position>2</Position>
-    </argument>
-    <column id="5609" parent="5591" name="optname">
+    <column id="5604" parent="5588" name="optname">
       <DasType>sysname|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5610" parent="5591" name="value">
+    <column id="5605" parent="5588" name="value">
       <DasType>bit|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5611" parent="5591" name="major_version">
+    <column id="5606" parent="5588" name="major_version">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5612" parent="5591" name="minor_version">
+    <column id="5607" parent="5588" name="minor_version">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5613" parent="5591" name="revision">
+    <column id="5608" parent="5588" name="revision">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="5614" parent="5591" name="install_failures">
+    <column id="5609" parent="5588" name="install_failures">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5615" parent="5592" name="Id_actors">
+    <column id="5610" parent="5589" name="Id_actors">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(11)</SequenceIdentity>
+      <SequenceIdentity>1(20)</SequenceIdentity>
     </column>
-    <column id="5616" parent="5592" name="lastName">
+    <column id="5611" parent="5589" name="lastName">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5617" parent="5592" name="firstName">
+    <column id="5612" parent="5589" name="firstName">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5618" parent="5592" name="birthDate">
+    <column id="5613" parent="5589" name="birthDate">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5619" parent="5592" name="creationDate">
+    <column id="5614" parent="5589" name="creationDate">
       <DasType>datetime2|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <DefaultConstraintId>999674609</DefaultConstraintId>
       <DefaultConstraintName>DF_creationDate_default_actors</DefaultConstraintName>
     </column>
-    <column id="5620" parent="5592" name="updateDate">
+    <column id="5615" parent="5589" name="updateDate">
       <DasType>datetime2|0s</DasType>
       <Position>6</Position>
     </column>
-    <default id="5621" parent="5592" name="DF_creationDate_default_actors">
+    <default id="5616" parent="5589" name="DF_creationDate_default_actors">
       <ColNames>creationDate</ColNames>
-      <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2023-10-06.08:49:04.537</ModifiedTimestamp>
       <ObjectId>999674609</ObjectId>
     </default>
-    <index id="5622" parent="5592" name="PK__actors__AA137366A1C1940E">
+    <index id="5617" parent="5589" name="PK__actors__AA137366A1C1940E">
       <Clustering>1</Clustering>
       <ColNames>Id_actors</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5623" parent="5592" name="PK__actors__AA137366A1C1940E">
+    <key id="5618" parent="5589" name="PK__actors__AA137366A1C1940E">
       <CreatedTimestamp>2023-10-06.08:49:04.493</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.493</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17158,7 +17100,7 @@
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__actors__AA137366A1C1940E</UnderlyingIndexName>
     </key>
-    <trigger id="5624" parent="5592" name="trg_actors_update_timestamp">
+    <trigger id="5619" parent="5589" name="trg_actors_update_timestamp">
       <CreatedTimestamp>2023-10-06.08:54:17.100</CreatedTimestamp>
       <Events>U</Events>
       <ModifiedTimestamp>2023-10-06.08:54:17.100</ModifiedTimestamp>
@@ -17166,120 +17108,46 @@
       <SourceTextLength>206</SourceTextLength>
       <Turn>after-stmt</Turn>
     </trigger>
-    <column id="5625" parent="5593" name="Id_archives">
+    <column id="5620" parent="5590" name="Id_directors">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1</SequenceIdentity>
+      <SequenceIdentity>1(11)</SequenceIdentity>
     </column>
-    <column id="5626" parent="5593" name="userUpdateDate">
-      <DasType>datetime2|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="5627" parent="5593" name="columnName">
-      <DasType>varchar(50 char)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="5628" parent="5593" name="oldValue">
-      <DasType>varchar(50 char)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="5629" parent="5593" name="newValue">
-      <DasType>varchar(50 char)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <column id="5630" parent="5593" name="Id_users">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>6</Position>
-    </column>
-    <column id="5631" parent="5593" name="creationDate">
-      <DasType>datetime2|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>7</Position>
-      <DefaultConstraintId>1031674723</DefaultConstraintId>
-      <DefaultConstraintName>DF_creationDate_default_archives</DefaultConstraintName>
-    </column>
-    <column id="5632" parent="5593" name="updateDate">
-      <DasType>datetime2|0s</DasType>
-      <Position>8</Position>
-    </column>
-    <default id="5633" parent="5593" name="DF_creationDate_default_archives">
-      <ColNames>creationDate</ColNames>
-      <DefaultExpression>getdate()</DefaultExpression>
-      <ModifiedTimestamp>2023-10-06.08:49:04.550</ModifiedTimestamp>
-      <ObjectId>1031674723</ObjectId>
-    </default>
-    <foreign-key id="5634" parent="5593" name="FK__archives__Id_use__2E3BD7D3">
-      <ColNames>Id_users</ColNames>
-      <CreatedTimestamp>2023-10-06.08:49:04.513</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-06.08:49:04.513</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>775673811</ObjectId>
-      <RefColNames>Id_users</RefColNames>
-      <RefTableId>695673526</RefTableId>
-      <RefTableName>users</RefTableName>
-    </foreign-key>
-    <index id="5635" parent="5593" name="PK__archives__006ED720F9B85014">
-      <Clustering>1</Clustering>
-      <ColNames>Id_archives</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Position>1</Position>
-      <Unique>1</Unique>
-    </index>
-    <key id="5636" parent="5593" name="PK__archives__006ED720F9B85014">
-      <CreatedTimestamp>2023-10-06.08:49:04.513</CreatedTimestamp>
-      <ModifiedTimestamp>2023-10-06.08:49:04.513</ModifiedTimestamp>
-      <NameSurrogate>1</NameSurrogate>
-      <ObjectId>759673754</ObjectId>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PK__archives__006ED720F9B85014</UnderlyingIndexName>
-    </key>
-    <column id="5637" parent="5594" name="Id_directors">
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <SequenceIdentity>1(6)</SequenceIdentity>
-    </column>
-    <column id="5638" parent="5594" name="lastName">
+    <column id="5621" parent="5590" name="lastName">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5639" parent="5594" name="firstName">
+    <column id="5622" parent="5590" name="firstName">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5640" parent="5594" name="creationDate">
+    <column id="5623" parent="5590" name="creationDate">
       <DasType>datetime2|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <DefaultConstraintId>1015674666</DefaultConstraintId>
       <DefaultConstraintName>DF_creationDate_default_directors</DefaultConstraintName>
     </column>
-    <column id="5641" parent="5594" name="updateDate">
+    <column id="5624" parent="5590" name="updateDate">
       <DasType>datetime2|0s</DasType>
       <Position>5</Position>
     </column>
-    <default id="5642" parent="5594" name="DF_creationDate_default_directors">
+    <default id="5625" parent="5590" name="DF_creationDate_default_directors">
       <ColNames>creationDate</ColNames>
-      <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2023-10-06.08:49:04.543</ModifiedTimestamp>
       <ObjectId>1015674666</ObjectId>
     </default>
-    <index id="5643" parent="5594" name="PK__director__E6455C3CB12D2844">
+    <index id="5626" parent="5590" name="PK__director__E6455C3CB12D2844">
       <Clustering>1</Clustering>
       <ColNames>Id_directors</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5644" parent="5594" name="PK__director__E6455C3CB12D2844">
+    <key id="5627" parent="5590" name="PK__director__E6455C3CB12D2844">
       <CreatedTimestamp>2023-10-06.08:49:04.480</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.480</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17287,17 +17155,17 @@
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__director__E6455C3CB12D2844</UnderlyingIndexName>
     </key>
-    <column id="5645" parent="5595" name="Id_movies">
+    <column id="5628" parent="5591" name="Id_movies">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5646" parent="5595" name="Id_directors">
+    <column id="5629" parent="5591" name="Id_directors">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="5647" parent="5595" name="FK__directs__Id_movi__35DCF99B">
+    <foreign-key id="5630" parent="5591" name="FK__directs__Id_movi__35DCF99B">
       <ColNames>Id_movies</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.523</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.523</ModifiedTimestamp>
@@ -17307,7 +17175,7 @@
       <RefTableId>519672899</RefTableId>
       <RefTableName>movies</RefTableName>
     </foreign-key>
-    <foreign-key id="5648" parent="5595" name="FK__directs__Id_dire__36D11DD4">
+    <foreign-key id="5631" parent="5591" name="FK__directs__Id_dire__36D11DD4">
       <ColNames>Id_directors</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.523</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.523</ModifiedTimestamp>
@@ -17317,7 +17185,7 @@
       <RefTableId>551673013</RefTableId>
       <RefTableName>directors</RefTableName>
     </foreign-key>
-    <index id="5649" parent="5595" name="PK__directs__71A66B90AF109DCE">
+    <index id="5632" parent="5591" name="PK__directs__71A66B90AF109DCE">
       <Clustering>1</Clustering>
       <ColNames>Id_movies
 Id_directors</ColNames>
@@ -17325,7 +17193,7 @@ Id_directors</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5650" parent="5595" name="PK__directs__71A66B90AF109DCE">
+    <key id="5633" parent="5591" name="PK__directs__71A66B90AF109DCE">
       <CreatedTimestamp>2023-10-06.08:49:04.523</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.523</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17333,52 +17201,51 @@ Id_directors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__directs__71A66B90AF109DCE</UnderlyingIndexName>
     </key>
-    <column id="5651" parent="5596" name="Id_movies">
+    <column id="5634" parent="5592" name="Id_movies">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(7)</SequenceIdentity>
+      <SequenceIdentity>1(12)</SequenceIdentity>
     </column>
-    <column id="5652" parent="5596" name="title">
+    <column id="5635" parent="5592" name="title">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5653" parent="5596" name="length">
+    <column id="5636" parent="5592" name="length">
       <DasType>time|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5654" parent="5596" name="releaseDate">
+    <column id="5637" parent="5592" name="releaseDate">
       <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5655" parent="5596" name="creationDate">
+    <column id="5638" parent="5592" name="creationDate">
       <DasType>datetime2|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <DefaultConstraintId>1047674780</DefaultConstraintId>
       <DefaultConstraintName>DF_creationDate_default_movies</DefaultConstraintName>
     </column>
-    <column id="5656" parent="5596" name="updateDate">
+    <column id="5639" parent="5592" name="updateDate">
       <DasType>datetime2|0s</DasType>
       <Position>6</Position>
     </column>
-    <default id="5657" parent="5596" name="DF_creationDate_default_movies">
+    <default id="5640" parent="5592" name="DF_creationDate_default_movies">
       <ColNames>creationDate</ColNames>
-      <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2023-10-06.08:49:04.557</ModifiedTimestamp>
       <ObjectId>1047674780</ObjectId>
     </default>
-    <index id="5658" parent="5596" name="PK__movies__AFC23E53C007BE03">
+    <index id="5641" parent="5592" name="PK__movies__AFC23E53C007BE03">
       <Clustering>1</Clustering>
       <ColNames>Id_movies</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5659" parent="5596" name="PK__movies__AFC23E53C007BE03">
+    <key id="5642" parent="5592" name="PK__movies__AFC23E53C007BE03">
       <CreatedTimestamp>2023-10-06.08:49:04.470</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.470</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17386,7 +17253,7 @@ Id_directors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__movies__AFC23E53C007BE03</UnderlyingIndexName>
     </key>
-    <trigger id="5660" parent="5596" name="trg_movies_update_timestamp">
+    <trigger id="5643" parent="5592" name="trg_movies_update_timestamp">
       <CreatedTimestamp>2023-10-06.08:57:19.870</CreatedTimestamp>
       <Events>U</Events>
       <ModifiedTimestamp>2023-10-06.08:57:19.870</ModifiedTimestamp>
@@ -17394,17 +17261,17 @@ Id_directors</ColNames>
       <SourceTextLength>206</SourceTextLength>
       <Turn>after-stmt</Turn>
     </trigger>
-    <column id="5661" parent="5597" name="Id_movies">
+    <column id="5644" parent="5593" name="Id_movies">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5662" parent="5597" name="Id_users">
+    <column id="5645" parent="5593" name="Id_users">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="5663" parent="5597" name="FK__owns__Id_movies__39AD8A7F">
+    <foreign-key id="5646" parent="5593" name="FK__owns__Id_movies__39AD8A7F">
       <ColNames>Id_movies</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.530</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.530</ModifiedTimestamp>
@@ -17414,7 +17281,7 @@ Id_directors</ColNames>
       <RefTableId>519672899</RefTableId>
       <RefTableName>movies</RefTableName>
     </foreign-key>
-    <foreign-key id="5664" parent="5597" name="FK__owns__Id_users__3AA1AEB8">
+    <foreign-key id="5647" parent="5593" name="FK__owns__Id_users__3AA1AEB8">
       <ColNames>Id_users</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.533</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.533</ModifiedTimestamp>
@@ -17424,7 +17291,7 @@ Id_directors</ColNames>
       <RefTableId>695673526</RefTableId>
       <RefTableName>users</RefTableName>
     </foreign-key>
-    <index id="5665" parent="5597" name="PK__owns__66436995BF05E22A">
+    <index id="5648" parent="5593" name="PK__owns__66436995BF05E22A">
       <Clustering>1</Clustering>
       <ColNames>Id_movies
 Id_users</ColNames>
@@ -17432,7 +17299,7 @@ Id_users</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5666" parent="5597" name="PK__owns__66436995BF05E22A">
+    <key id="5649" parent="5593" name="PK__owns__66436995BF05E22A">
       <CreatedTimestamp>2023-10-06.08:49:04.530</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.530</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17440,22 +17307,22 @@ Id_users</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__owns__66436995BF05E22A</UnderlyingIndexName>
     </key>
-    <column id="5667" parent="5598" name="Id_movies">
+    <column id="5650" parent="5594" name="Id_movies">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5668" parent="5598" name="Id_roles">
+    <column id="5651" parent="5594" name="Id_roles">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5669" parent="5598" name="Id_actors">
+    <column id="5652" parent="5594" name="Id_actors">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="5670" parent="5598" name="FK__plays_in__Id_mov__3118447E">
+    <foreign-key id="5653" parent="5594" name="FK__plays_in__Id_mov__3118447E">
       <ColNames>Id_movies</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.517</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.517</ModifiedTimestamp>
@@ -17465,7 +17332,7 @@ Id_users</ColNames>
       <RefTableId>519672899</RefTableId>
       <RefTableName>movies</RefTableName>
     </foreign-key>
-    <foreign-key id="5671" parent="5598" name="FK__plays_in__Id_rol__320C68B7">
+    <foreign-key id="5654" parent="5594" name="FK__plays_in__Id_rol__320C68B7">
       <ColNames>Id_roles</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.517</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.517</ModifiedTimestamp>
@@ -17475,7 +17342,7 @@ Id_users</ColNames>
       <RefTableId>583673127</RefTableId>
       <RefTableName>roles</RefTableName>
     </foreign-key>
-    <foreign-key id="5672" parent="5598" name="FK__plays_in__Id_act__33008CF0">
+    <foreign-key id="5655" parent="5594" name="FK__plays_in__Id_act__33008CF0">
       <ColNames>Id_actors</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.517</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.517</ModifiedTimestamp>
@@ -17485,7 +17352,7 @@ Id_users</ColNames>
       <RefTableId>615673241</RefTableId>
       <RefTableName>actors</RefTableName>
     </foreign-key>
-    <index id="5673" parent="5598" name="PK__plays_in__1FF3A0C7B45FFCF7">
+    <index id="5656" parent="5594" name="PK__plays_in__1FF3A0C7B45FFCF7">
       <Clustering>1</Clustering>
       <ColNames>Id_movies
 Id_roles
@@ -17494,7 +17361,7 @@ Id_actors</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5674" parent="5598" name="PK__plays_in__1FF3A0C7B45FFCF7">
+    <key id="5657" parent="5594" name="PK__plays_in__1FF3A0C7B45FFCF7">
       <CreatedTimestamp>2023-10-06.08:49:04.517</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.517</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17502,48 +17369,47 @@ Id_actors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__plays_in__1FF3A0C7B45FFCF7</UnderlyingIndexName>
     </key>
-    <column id="5675" parent="5599" name="Id_privileges">
+    <column id="5658" parent="5595" name="Id_privileges">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(4)</SequenceIdentity>
+      <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="5676" parent="5599" name="privilege">
+    <column id="5659" parent="5595" name="privilege">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5677" parent="5599" name="creationDate">
+    <column id="5660" parent="5595" name="creationDate">
       <DasType>datetime2|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <DefaultConstraintId>1063674837</DefaultConstraintId>
       <DefaultConstraintName>DF_creationDate_default_privileges</DefaultConstraintName>
     </column>
-    <column id="5678" parent="5599" name="updateDate">
+    <column id="5661" parent="5595" name="updateDate">
       <DasType>datetime2|0s</DasType>
       <Position>4</Position>
     </column>
-    <default id="5679" parent="5599" name="DF_creationDate_default_privileges">
+    <default id="5662" parent="5595" name="DF_creationDate_default_privileges">
       <ColNames>creationDate</ColNames>
-      <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2023-10-06.08:49:04.563</ModifiedTimestamp>
       <ObjectId>1063674837</ObjectId>
     </default>
-    <index id="5680" parent="5599" name="PK__privileg__86641A59FC8ECD87">
+    <index id="5663" parent="5595" name="PK__privileg__86641A59FC8ECD87">
       <Clustering>1</Clustering>
       <ColNames>Id_privileges</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <index id="5681" parent="5599" name="UQ__privileg__BBB7063D8567580C">
+    <index id="5664" parent="5595" name="UQ__privileg__BBB7063D8567580C">
       <ColNames>privilege</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>2</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5682" parent="5599" name="PK__privileg__86641A59FC8ECD87">
+    <key id="5665" parent="5595" name="PK__privileg__86641A59FC8ECD87">
       <CreatedTimestamp>2023-10-06.08:49:04.500</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.500</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17551,49 +17417,48 @@ Id_actors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__privileg__86641A59FC8ECD87</UnderlyingIndexName>
     </key>
-    <key id="5683" parent="5599" name="UQ__privileg__BBB7063D8567580C">
+    <key id="5666" parent="5595" name="UQ__privileg__BBB7063D8567580C">
       <CreatedTimestamp>2023-10-06.08:49:04.500</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.500</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>679673469</ObjectId>
       <UnderlyingIndexName>UQ__privileg__BBB7063D8567580C</UnderlyingIndexName>
     </key>
-    <column id="5684" parent="5600" name="Id_roles">
+    <column id="5667" parent="5596" name="Id_roles">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(3)</SequenceIdentity>
+      <SequenceIdentity>1(5)</SequenceIdentity>
     </column>
-    <column id="5685" parent="5600" name="role">
+    <column id="5668" parent="5596" name="role">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5686" parent="5600" name="creationDate">
+    <column id="5669" parent="5596" name="creationDate">
       <DasType>datetime2|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <DefaultConstraintId>1079674894</DefaultConstraintId>
       <DefaultConstraintName>DF_creationDate_default_roles</DefaultConstraintName>
     </column>
-    <column id="5687" parent="5600" name="updateDate">
+    <column id="5670" parent="5596" name="updateDate">
       <DasType>datetime2|0s</DasType>
       <Position>4</Position>
     </column>
-    <default id="5688" parent="5600" name="DF_creationDate_default_roles">
+    <default id="5671" parent="5596" name="DF_creationDate_default_roles">
       <ColNames>creationDate</ColNames>
-      <DefaultExpression>getdate()</DefaultExpression>
       <ModifiedTimestamp>2023-10-06.08:49:04.570</ModifiedTimestamp>
       <ObjectId>1079674894</ObjectId>
     </default>
-    <index id="5689" parent="5600" name="PK__roles__79B8DE7C1BF865D9">
+    <index id="5672" parent="5596" name="PK__roles__79B8DE7C1BF865D9">
       <Clustering>1</Clustering>
       <ColNames>Id_roles</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5690" parent="5600" name="PK__roles__79B8DE7C1BF865D9">
+    <key id="5673" parent="5596" name="PK__roles__79B8DE7C1BF865D9">
       <CreatedTimestamp>2023-10-06.08:49:04.487</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.487</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17601,233 +17466,240 @@ Id_actors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__roles__79B8DE7C1BF865D9</UnderlyingIndexName>
     </key>
-    <column id="5691" parent="5601" name="xserver_name">
+    <column id="5674" parent="5597" name="xserver_name">
       <DasType>varchar(30 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5692" parent="5601" name="xdttm_ins">
+    <column id="5675" parent="5597" name="xdttm_ins">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5693" parent="5601" name="xdttm_last_ins_upd">
+    <column id="5676" parent="5597" name="xdttm_last_ins_upd">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5694" parent="5601" name="xfallback_dbid">
+    <column id="5677" parent="5597" name="xfallback_dbid">
       <DasType>smallint|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5695" parent="5601" name="name">
+    <column id="5678" parent="5597" name="name">
       <DasType>varchar(30 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="5696" parent="5601" name="dbid">
+    <column id="5679" parent="5597" name="dbid">
       <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5697" parent="5601" name="status">
+    <column id="5680" parent="5597" name="status">
       <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="5698" parent="5601" name="version">
+    <column id="5681" parent="5597" name="version">
       <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="5699" parent="5602" name="xserver_name">
+    <column id="5682" parent="5598" name="xserver_name">
       <DasType>varchar(30 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5700" parent="5602" name="xdttm_ins">
+    <column id="5683" parent="5598" name="xdttm_ins">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5701" parent="5602" name="xdttm_last_ins_upd">
+    <column id="5684" parent="5598" name="xdttm_last_ins_upd">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5702" parent="5602" name="xfallback_low">
+    <column id="5685" parent="5598" name="xfallback_low">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5703" parent="5602" name="xfallback_drive">
+    <column id="5686" parent="5598" name="xfallback_drive">
       <DasType>char(2 char)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="5704" parent="5602" name="low">
+    <column id="5687" parent="5598" name="low">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5705" parent="5602" name="high">
+    <column id="5688" parent="5598" name="high">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="5706" parent="5602" name="status">
+    <column id="5689" parent="5598" name="status">
       <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="5707" parent="5602" name="name">
+    <column id="5690" parent="5598" name="name">
       <DasType>varchar(30 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="5708" parent="5602" name="phyname">
+    <column id="5691" parent="5598" name="phyname">
       <DasType>varchar(127 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <column id="5709" parent="5603" name="xserver_name">
+    <column id="5692" parent="5599" name="xserver_name">
       <DasType>varchar(30 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5710" parent="5603" name="xdttm_ins">
+    <column id="5693" parent="5599" name="xdttm_ins">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5711" parent="5603" name="xdttm_last_ins_upd">
+    <column id="5694" parent="5599" name="xdttm_last_ins_upd">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5712" parent="5603" name="xfallback_vstart">
+    <column id="5695" parent="5599" name="xfallback_vstart">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5713" parent="5603" name="dbid">
+    <column id="5696" parent="5599" name="dbid">
       <DasType>smallint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="5714" parent="5603" name="segmap">
+    <column id="5697" parent="5599" name="segmap">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5715" parent="5603" name="lstart">
+    <column id="5698" parent="5599" name="lstart">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="5716" parent="5603" name="sizepg">
+    <column id="5699" parent="5599" name="sizepg">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="5717" parent="5603" name="vstart">
+    <column id="5700" parent="5599" name="vstart">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="5718" parent="5604" name="lastrun">
+    <column id="5701" parent="5600" name="lastrun">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="5719" parent="5604" name="cpu_busy">
+    <column id="5702" parent="5600" name="cpu_busy">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5720" parent="5604" name="io_busy">
+    <column id="5703" parent="5600" name="io_busy">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5721" parent="5604" name="idle">
+    <column id="5704" parent="5600" name="idle">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5722" parent="5604" name="pack_received">
+    <column id="5705" parent="5600" name="pack_received">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="5723" parent="5604" name="pack_sent">
+    <column id="5706" parent="5600" name="pack_sent">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5724" parent="5604" name="connections">
+    <column id="5707" parent="5600" name="connections">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="5725" parent="5604" name="pack_errors">
+    <column id="5708" parent="5600" name="pack_errors">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="5726" parent="5604" name="total_read">
+    <column id="5709" parent="5600" name="total_read">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="5727" parent="5604" name="total_write">
+    <column id="5710" parent="5600" name="total_write">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <column id="5728" parent="5604" name="total_errors">
+    <column id="5711" parent="5600" name="total_errors">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <column id="5729" parent="5605" name="Id_users">
+    <column id="5712" parent="5601" name="Id_users">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <SequenceIdentity>1(2)</SequenceIdentity>
+      <SequenceIdentity>1(10)</SequenceIdentity>
     </column>
-    <column id="5730" parent="5605" name="firstName">
+    <column id="5713" parent="5601" name="firstName">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5731" parent="5605" name="lastName">
+    <column id="5714" parent="5601" name="lastName">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5732" parent="5605" name="email">
+    <column id="5715" parent="5601" name="email">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="5733" parent="5605" name="password">
+    <column id="5716" parent="5601" name="password">
       <DasType>varchar(50 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="5734" parent="5605" name="Id_privileges">
+    <column id="5717" parent="5601" name="Id_privileges">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="5735" parent="5605" name="creationDate">
+    <column id="5718" parent="5601" name="creationDate">
       <DasType>datetime2|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
+      <DefaultConstraintId>1143675122</DefaultConstraintId>
+      <DefaultConstraintName>DF_creationDate_default_users</DefaultConstraintName>
     </column>
-    <column id="5736" parent="5605" name="updateDate">
+    <column id="5719" parent="5601" name="updateDate">
       <DasType>datetime2|0s</DasType>
       <Position>8</Position>
     </column>
-    <foreign-key id="5737" parent="5605" name="FK__users__Id_privil__2B5F6B28">
+    <default id="5720" parent="5601" name="DF_creationDate_default_users">
+      <ColNames>creationDate</ColNames>
+      <ModifiedTimestamp>2023-10-06.11:34:18.830</ModifiedTimestamp>
+      <ObjectId>1143675122</ObjectId>
+    </default>
+    <foreign-key id="5721" parent="5601" name="FK__users__Id_privil__2B5F6B28">
       <ColNames>Id_privileges</ColNames>
       <CreatedTimestamp>2023-10-06.08:49:04.503</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.503</ModifiedTimestamp>
@@ -17837,14 +17709,14 @@ Id_actors</ColNames>
       <RefTableId>647673355</RefTableId>
       <RefTableName>privileges</RefTableName>
     </foreign-key>
-    <index id="5738" parent="5605" name="PK__users__98157C6D63742D0B">
+    <index id="5722" parent="5601" name="PK__users__98157C6D63742D0B">
       <Clustering>1</Clustering>
       <ColNames>Id_users</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <Position>1</Position>
       <Unique>1</Unique>
     </index>
-    <key id="5739" parent="5605" name="PK__users__98157C6D63742D0B">
+    <key id="5723" parent="5601" name="PK__users__98157C6D63742D0B">
       <CreatedTimestamp>2023-10-06.08:49:04.503</CreatedTimestamp>
       <ModifiedTimestamp>2023-10-06.08:49:04.503</ModifiedTimestamp>
       <NameSurrogate>1</NameSurrogate>
@@ -17852,29 +17724,101 @@ Id_actors</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK__users__98157C6D63742D0B</UnderlyingIndexName>
     </key>
-    <column id="5740" parent="5606" name="name">
+    <column id="5724" parent="5602" name="Id_usersArchives">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="5725" parent="5602" name="userUpdateDate">
+      <DasType>datetime2|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="5726" parent="5602" name="columnName">
+      <DasType>varchar(50 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="5727" parent="5602" name="oldValue">
+      <DasType>varchar(50 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="5728" parent="5602" name="newValue">
+      <DasType>varchar(50 char)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="5729" parent="5602" name="Id_users">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="5730" parent="5602" name="creationDate">
+      <DasType>datetime2|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+      <DefaultConstraintId>1031674723</DefaultConstraintId>
+      <DefaultConstraintName>DF_creationDate_default_archives</DefaultConstraintName>
+    </column>
+    <column id="5731" parent="5602" name="updateDate">
+      <DasType>datetime2|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <default id="5732" parent="5602" name="DF_creationDate_default_archives">
+      <ColNames>creationDate</ColNames>
+      <ModifiedTimestamp>2023-10-06.08:49:04.550</ModifiedTimestamp>
+      <ObjectId>1031674723</ObjectId>
+    </default>
+    <foreign-key id="5733" parent="5602" name="FK__archives__Id_use__2E3BD7D3">
+      <ColNames>Id_users</ColNames>
+      <CreatedTimestamp>2023-10-06.08:49:04.513</CreatedTimestamp>
+      <ModifiedTimestamp>2023-10-06.08:49:04.513</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>775673811</ObjectId>
+      <RefColNames>Id_users</RefColNames>
+      <RefTableId>695673526</RefTableId>
+      <RefTableName>users</RefTableName>
+    </foreign-key>
+    <index id="5734" parent="5602" name="PK__archives__006ED720F9B85014">
+      <Clustering>1</Clustering>
+      <ColNames>Id_usersArchives</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <Position>1</Position>
+      <Unique>1</Unique>
+    </index>
+    <key id="5735" parent="5602" name="PK__archives__006ED720F9B85014">
+      <CreatedTimestamp>2023-10-06.08:49:04.513</CreatedTimestamp>
+      <ModifiedTimestamp>2023-10-06.08:49:04.513</ModifiedTimestamp>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>759673754</ObjectId>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PK__archives__006ED720F9B85014</UnderlyingIndexName>
+    </key>
+    <column id="5736" parent="5603" name="name">
       <DasType>nvarchar(35 char)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="5741" parent="5606" name="number">
+    <column id="5737" parent="5603" name="number">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="5742" parent="5606" name="type">
+    <column id="5738" parent="5603" name="type">
       <DasType>nchar(3 char)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="5743" parent="5606" name="low">
+    <column id="5739" parent="5603" name="low">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="5744" parent="5606" name="high">
+    <column id="5740" parent="5603" name="high">
       <DasType>int|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="5745" parent="5606" name="status">
+    <column id="5741" parent="5603" name="status">
       <DasType>int|0s</DasType>
       <Position>6</Position>
     </column>

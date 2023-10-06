@@ -61,8 +61,8 @@ CREATE TABLE users(
    FOREIGN KEY(Id_privileges) REFERENCES privileges(Id_privileges)
 );
 
-CREATE TABLE archives(
-    Id_archives INT IDENTITY(1,1),
+CREATE TABLE usersArchives(
+    Id_usersArchives INT IDENTITY(1,1),
     userUpdateDate DATETIME2 NOT NULL,
     columnName VARCHAR(50) NOT NULL,
     oldValue VARCHAR(50) NOT NULL,
@@ -70,7 +70,7 @@ CREATE TABLE archives(
     Id_users INT NOT NULL,
     creationDate DATETIME2 NOT NULL,
     updateDate DATETIME2,
-    PRIMARY KEY(Id_archives),
+    PRIMARY KEY(Id_usersArchives),
     FOREIGN KEY(Id_users) REFERENCES users(Id_users)
 );
 
@@ -110,7 +110,7 @@ ALTER TABLE directors
 ADD CONSTRAINT DF_creationDate_default_directors
 DEFAULT GETDATE() FOR creationDate;
 
-ALTER TABLE archives
+ALTER TABLE usersArchives
 ADD CONSTRAINT DF_creationDate_default_archives
 DEFAULT GETDATE() FOR creationDate;
 
@@ -127,8 +127,5 @@ ADD CONSTRAINT DF_creationDate_default_roles
 DEFAULT GETDATE() FOR creationDate;
 
 ALTER TABLE users
-ADD CONSTRAINT DF_creationDate_default_roles
+ADD CONSTRAINT DF_creationDate_default_users
 DEFAULT GETDATE() FOR creationDate;
-
-INSERT INTO actors (lastName, firstName, birthDate)
-VALUES ('John', 'Doe', '1985-01-01');
