@@ -82,7 +82,7 @@ BEGIN
         i.Id_privileges <> d.Id_privileges
 
 END;
-
+GO
 
 -- Trigger for global archives
 
@@ -91,79 +91,85 @@ ON actors
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE actors
     SET updateDate = GETDATE()
     WHERE Id_actors IN (SELECT Id_actors FROM INSERTED);
 END;
+GO
 
 CREATE TRIGGER trg_movies_update_timestamp
 ON movies
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE movies
     SET updateDate = GETDATE()
     WHERE Id_movies IN (SELECT Id_movies FROM INSERTED);
 END;
+GO
 
 CREATE TRIGGER trg_directors_update_timestamp
 ON directors
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE directors
     SET updateDate = GETDATE()
     WHERE Id_directors IN (SELECT Id_directors FROM INSERTED);
 END;
+GO
 
 CREATE TRIGGER trg_roles_update_timestamp
 ON roles
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE roles
     SET updateDate = GETDATE()
     WHERE Id_roles IN (SELECT Id_roles FROM INSERTED);
 END;
+GO
 
 CREATE TRIGGER trg_archives_update_timestamp
 ON usersArchives
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE usersArchives
     SET updateDate = GETDATE()
     WHERE Id_usersArchives IN (SELECT Id_usersArchives FROM INSERTED);
 END;
+GO
 
 CREATE TRIGGER trg_privileges_update_timestamp
 ON privileges
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE privileges
     SET updateDate = GETDATE()
     WHERE Id_privileges IN (SELECT Id_privileges FROM INSERTED);
 END;
+GO
 
 CREATE TRIGGER trg_users_update_timestamp
 ON users
 AFTER UPDATE
 AS
 BEGIN
-    SET NOCOUNT ON;
+    SET NOCOUNT ON
 
     UPDATE users
     SET updateDate = GETDATE()
