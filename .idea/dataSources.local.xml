@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="DB-232.9559.28">
-    <data-source name="@localhost" uuid="d6de5627-2f54-493f-b9f7-439b090650c1">
+    <data-source name="@localhost [2]" uuid="7daf4547-7b9f-4ea2-a920-7ce7627d2392">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="@localhost" uuid="bd550eb8-ca7b-4dc4-ace1-2785bcd721b1">
       <database-info product="Microsoft SQL Server" version="16.00.4075" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 12.2 for SQL Server" driver-version="12.2.0.0" dbms="MSSQL" exact-version="16.0.4075" exact-driver-version="12.2">
         <extra-name-characters>$#@</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
-      <user-name>user</user-name>
+      <user-name>sa</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="database" qname="@">
