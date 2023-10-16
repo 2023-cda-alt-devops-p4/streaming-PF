@@ -7,6 +7,11 @@
     <file url="file://$PROJECT_DIR$/assets/sql/sp_GetMoviesByDirector.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/assets/sql/test-querries.sql" dialect="TSQL" />
     <file url="file://$PROJECT_DIR$/assets/sql/triggers.sql" dialect="TSQL" />
-    <file url="file://$PROJECT_DIR$/../streaming-zl-main/streaming-zl-main/scripts/init_script.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../streaming-ac/create_tables.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../streaming-ac/requetes.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../streaming-ac/trigger.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../streaming-ac/values.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../streaming-lp/database.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../streaming-lp/queries_sql.sql" dialect="MySQL" />
   </component>
 </project>
