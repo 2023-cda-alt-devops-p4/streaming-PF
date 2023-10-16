@@ -200,50 +200,50 @@ EXEC sp_GetMoviesByDirector @DirectorFirstName='Christopher', @DirectorLastName=
 
 ## Critères de performance
 
-- [ ] Récupération facile de votre environnement
-- [ ] Exactitude des relations entre les tables
-- [ ] Trigger* mis en place
-- [ ] Bonne présentation des requêtes sur le *README.md*
-- [ ] Exécution des requêtes sans erreur
+- [✔️] Récupération facile de votre environnement
+- [✔️] Exactitude des relations entre les tables
+- [✔️] Trigger* mis en place
+- [✔️] Bonne présentation des requêtes sur le *README.md*
+- [✔️] Exécution des requêtes sans erreur
 
 
 ## Livrables
 
 Un dépôt GitHub contenant :
 
-- [ ] L'environnement docker
-- [ ] Le dictionnaire de données
-- [ ] Un MCD
-- [ ] Un MPD
-- [ ] Un MLD
-- [ ] Un fichier permettant de générer la BDD (incluant quelques données)
-- [ ] Un fichier contenant les requêtes demandés
-- [ ] Un *README.md* documenté
+- [✔️] L'environnement docker
+- [✔️] Le dictionnaire de données
+- [✔️] Un MCD
+- [✔️] Un MPD
+- [✔️] Un MLD
+- [✔️] Un fichier permettant de générer la BDD (incluant quelques données)
+- [✔️] Un fichier contenant les requêtes demandés
+- [✔️] Un *README.md* documenté
 
 
 ### Les requêtes
 
-- [ ] Seul l'administrateur de la BDD pourra ajouter, modifier ou supprimer des données.
-- [ ] Pour chaque entrée dans la base de données, il y aura la date de création et de modification.
-- [ ] Les titres et dates de sortie des films du plus récent au plus ancien
-- [ ] Les noms, prénoms et âges des acteurs/actrices de plus de 30 ans dans l'ordre alphabétique
-- [ ] La liste des acteurs/actrices principaux pour un film donné
-- [ ] La liste des films pour un acteur/actrice donné
-- [ ] Ajouter un film
-- [ ] Ajouter un acteur/actrice
-- [ ] Modifier un film
-- [ ] Supprimer un acteur/actrice
-- [ ] Afficher les 3 derniers acteurs/actrices ajouté(e)s
+- [✔️] Seul l'administrateur de la BDD pourra ajouter, modifier ou supprimer des données.
+- [✔️] Pour chaque entrée dans la base de données, il y aura la date de création et de modification.
+- [✔️] Les titres et dates de sortie des films du plus récent au plus ancien
+- [✔️] Les noms, prénoms et âges des acteurs/actrices de plus de 30 ans dans l'ordre alphabétique
+- [✔️] La liste des acteurs/actrices principaux pour un film donné
+- [✔️] La liste des films pour un acteur/actrice donné
+- [✔️] Ajouter un film
+- [✔️] Ajouter un acteur/actrice
+- [✔️] Modifier un film
+- [✔️] Supprimer un acteur/actrice
+- [✔️] Afficher les 3 derniers acteurs/actrices ajouté(e)s
 
 
 ### Procédures
 
-- [ ] Lister grâce à une procédure stockée les films d'un réalisateur donné en paramètre
+- [✔️] Lister grâce à une procédure stockée les films d'un réalisateur donné en paramètre
 
 
 ### Triggers
 
-- [ ] Garder grâce à un trigger une trace de toutes les modifications apportées à la table des utilisateurs. Ainsi, une table d'archive conservera la date de la mise à jour, l'identifiant de l'utilisateur concerné, l'ancienne valeur ainsi que la nouvelle.
+- [✔️] Garder grâce à un trigger une trace de toutes les modifications apportées à la table des utilisateurs. Ainsi, une table d'archive conservera la date de la mise à jour, l'identifiant de l'utilisateur concerné, l'ancienne valeur ainsi que la nouvelle.
 
 
 
